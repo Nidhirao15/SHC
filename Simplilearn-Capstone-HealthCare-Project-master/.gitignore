@@ -1,0 +1,10 @@
+/.idea/
+/src/main/resources/
+/target/classes/
+/target/generated-sources/
+/target/generated-test-sources/
+/target/maven-status/
+/target/reports/
+/target/surefire-reports/
+/target/test-classes/
+/src/main/java/com/simplilearn/utils/DBConnection.java

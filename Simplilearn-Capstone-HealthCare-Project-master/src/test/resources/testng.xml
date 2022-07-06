@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Medicare Test Suite">
+   <listeners>
+  	<listener class-name="com.simplilearn.listeners.TestngListener"></listener>
+  </listeners>
+  <test name="Front-End Tests on Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+	      <classes>
+	  		<class name="com.simplilearn.tests.ValidUserLoginTest"></class>
+            <class name="com.simplilearn.tests.InvalidUserLoginTest"></class>
+            <class name="com.simplilearn.tests.EndUserRegisterTest"></class>
+              <class name="com.simplilearn.tests.AdminUserNewCategoryTest"></class>
+              <class name="com.simplilearn.tests.AdminUserAddNewProductTest"></class>
+            <class name="com.simplilearn.tests.AdminUserEditProductDetailsTest"></class>
+            <class name="com.simplilearn.tests.AdminUserDisableProductTest"></class>
+            <class name="com.simplilearn.tests.AdminUserEnableProductTest"></class>
+            <class name="com.simplilearn.tests.EndUserSearchProductTest"></class>
+            <class name="com.simplilearn.tests.EndUserCompletePurchaseTest"></class>
+	  </classes>
+  </test>
+    <test name="Back-End Tests">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.simplilearn.backendtests.EndUserRegisterValidationTest"></class>
+            <class name="com.simplilearn.backendtests.AdminUserAddNewProductValidationTest"></class>
+            <class name="com.simplilearn.backendtests.AdminUserActiveProductValidationTest"></class>
+        </classes>
+    </test>
+</suite>
