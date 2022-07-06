@@ -8,3 +8,4 @@
 /target/surefire-reports/
 /target/test-classes/
 /src/main/java/com/simplilearn/utils/DBConnection.java
+/bin/
